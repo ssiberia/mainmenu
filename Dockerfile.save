@@ -1,0 +1,18 @@
+FROM python:latest
+
+WORKDIR /app
+
+# Install bgpq3 and any other dependencies
+RUN apt-get update && apt-get install -y \
+    bgpq3 \
+    && rm -rf /var/lib/apt/lists/* \
+    && which bgpq3 || echo bgpq3 not found \
+    && bgpq3 -v || echo bgpq3 failed to execute
+
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
+COPY . .
+
+CMD [ "python", "./mainmenu.py" ]
+

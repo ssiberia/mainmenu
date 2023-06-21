@@ -13,7 +13,7 @@ def print_banner():
       /  \    _ __    ___ __  __ _   __ _  | |_  ___    ___  | | ___ 
      / /\ \  | '_ \  / _ \\\\ \/ /| | / _` | | __|/ _ \  / _ \ | |/ __|
     / ____ \ | | | ||  __/ >  < | || (_| | | |_| (_) || (_) || |\__ \\
-   /_/    \_\|_| |_| \___|/_/\_\|_| \__,_|  \__|\___/  \___/ |_||___/""", 'yellow')
+   /_/    \_\|_| |_| \___|/_/\_\|_| \__,_|  \__|\___/  \___/ |_||___/""", 'blue')
     print(banner)
 
 def list_tools(tools):
@@ -57,7 +57,8 @@ def main():
         'IP visualisation (NO VPN)' : 'ipinfo.py',
         'IP info (RIPE, etc.)' : 'ip_ripe.py',
         'Config generator ipv6 xaas' : 'conf_gen.py',
-        'AS PeeringDB datas' : 'peeringdb.py'
+        'AS PeeringDB datas' : 'peeringdb.py',
+        'Basic NX infos' : 'basicinfos.py'
     }
 
     tools_list = list(tools.keys())
