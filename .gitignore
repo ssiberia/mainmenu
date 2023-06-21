@@ -1,8 +1,9 @@
-# .gitignore
+.gitignore
 __pycache__/
 *.log
 *.html
 *.yml
-Dockerfile*
+Dockerfile
+Dockerfile.save
 requirements.txt
 
