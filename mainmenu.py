@@ -48,17 +48,17 @@ def main():
     print(colored(f"\nToday is {current_day}", 'green'))
 
     tools = {
-        'Interface description generator': 'ifdescgenerator.py',
-        'BGPq3 prefix counter': 'bgpq3.py',
-        'Blueprint Upgrade shipping list generator': 'itemgenerator.py',
-		'Incident generator' : 'incident.py',
+        'ifdesc gen': 'ifdescgenerator.py',
+        'BGPq3': 'bgpq3.py',
+        'BU shipping gen': 'itemgenerator.py',
+		'Incident gen' : 'incident.py',
         'IP Calculator': 'netmaskcalc.py',
         'MAC Lookup' : 'maclookup.py',
         'IP visualisation (NO VPN)' : 'ipinfo.py',
         'IP info (RIPE, etc.)' : 'ip_ripe.py',
-        'Config generator ipv6 xaas' : 'conf_gen.py',
+        'Config gen ipv6 xaas' : 'conf_gen.py',
         'AS PeeringDB datas' : 'peeringdb.py',
-        'Basic NX infos' : 'basicinfos.py'
+        'Phone' : 'basicinfos.py'
     }
 
     tools_list = list(tools.keys())
