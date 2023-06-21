@@ -3,7 +3,5 @@ __pycache__/
 *.log
 *.html
 *.yml
-Dockerfile
-Dockerfile.save
+Docker*
 requirements.txt
-
