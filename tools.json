@@ -17,7 +17,7 @@
     {
       "name": "IP Visualization (NO VPN)",
       "script": "ipinfo.py",
-      "description": "Visualize IP route paths on a world map"
+      "description": "Visualize IP route paths from MTR"
     },
     {
       "name": "IP Info (RIPE, etc.)",
