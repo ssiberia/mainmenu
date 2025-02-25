@@ -12,14 +12,14 @@ try:
 		print(colored("As set is missing!", 'red'))
 	else:
 		# Query the number of prefixes in the AS set using bgpq3
-		os.system('bgpq3 -h whois.radb.net AS' + str(asset).upper() + " | wc -l")
+		os.system('bgpq4 -h whois.radb.net AS' + str(asset).upper() + " | wc -l")
 		
 		# Ask the user if they want the whole prefix list
 		pfl = input(colored('Do you need the whole prefix list? (y/n): ', 'blue'))
 		
 		if pfl == 'y':
 			# Query the prefixes in the AS set using bgpq3
-			os.system('bgpq3 -h whois.radb.net AS' + str(asset).upper())
+			os.system('bgpq4 -h whois.radb.net AS' + str(asset).upper())
 
 		# Ask the user if they want to open the PeeringDB website
 		pdb = input(colored('Do you need PeeringDb website? (y/n): ', 'blue'))

@@ -8,12 +8,7 @@ def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def print_banner():
-    banner = colored("""                                 _          _                 _      
-       /\                       (_)        | |               | |     
-      /  \    _ __    ___ __  __ _   __ _  | |_  ___    ___  | | ___ 
-     / /\ \  | '_ \  / _ \\\\ \/ /| | / _` | | __|/ _ \  / _ \ | |/ __|
-    / ____ \ | | | ||  __/ >  < | || (_| | | |_| (_) || (_) || |\__ \\
-   /_/    \_\|_| |_| \___|/_/\_\|_| \__,_|  \__|\___/  \___/ |_||___/""", 'blue')
+    banner = colored("""change it""", 'blue')
     print(banner)
 
 def list_tools(tools):
@@ -44,21 +39,17 @@ def main():
     print_banner()
 
     now = datetime.now()
-    current_day = now.strftime("%d.%m.%Y, %A, Week: %U, %I:%M %p")
+    current_day = now.strftime("%d.%m.%Y, %A, Week: %U+1, %I:%M %p")
     print(colored(f"\nToday is {current_day}", 'green'))
 
     tools = {
-        'ifdesc gen': 'ifdescgenerator.py',
         'BGPq3': 'bgpq3.py',
-        'BU shipping gen': 'itemgenerator.py',
-		'Incident gen' : 'incident.py',
         'IP Calculator': 'netmaskcalc.py',
         'MAC Lookup' : 'maclookup.py',
         'IP visualisation (NO VPN)' : 'ipinfo.py',
         'IP info (RIPE, etc.)' : 'ip_ripe.py',
-        'Config gen ipv6 xaas' : 'conf_gen.py',
         'AS PeeringDB datas' : 'peeringdb.py',
-        'Phone' : 'basicinfos.py'
+        'NLNOG discovery' : 'nlnog_discovery.py'
     }
 
     tools_list = list(tools.keys())
