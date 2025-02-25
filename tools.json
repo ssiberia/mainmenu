@@ -1,0 +1,32 @@
+[
+    {
+      "name": "BGPq4",
+      "script": "bgpq4.py",
+      "description": "Query IRR databases using bgpq4"
+    },
+    {
+      "name": "IP Calculator",
+      "script": "netmaskcalc.py",
+      "description": "Calculate network information from IP/netmask"
+    },
+    {
+      "name": "MAC Lookup",
+      "script": "maclookup.py",
+      "description": "Lookup MAC address vendor and format conversion"
+    },
+    {
+      "name": "IP Visualization (NO VPN)",
+      "script": "ipinfo.py",
+      "description": "Visualize IP route paths on a world map"
+    },
+    {
+      "name": "IP Info (RIPE, etc.)",
+      "script": "ip_ripe.py",
+      "description": "Query IP information from RIPE and other RIRs"
+    },
+    {
+      "name": "AS PeeringDB Data",
+      "script": "peeringdb.py",
+      "description": "Fetch AS information from PeeringDB"
+    }
+  ]
