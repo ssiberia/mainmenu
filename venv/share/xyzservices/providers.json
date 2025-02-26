@@ -62,12 +62,12 @@
             ],
             "name": "OpenStreetMap.BZH"
         },
-        "BlackAndWhite": {
-            "url": "http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png",
-            "max_zoom": 18,
-            "attribution": "(C) OpenStreetMap contributors",
-            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "name": "OpenStreetMap.BlackAndWhite"
+        "CAT": {
+            "url": "https://tile.openstreetmap.bzh/ca/{z}/{x}/{y}.png",
+            "max_zoom": 19,
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors, Tiles courtesy of <a href=\"https://www.openstreetmap.cat\" target=\"_blank\">Breton OpenStreetMap Team</a>",
+            "attribution": "(C) OpenStreetMap contributors, Tiles courtesy of Breton OpenStreetMap Team",
+            "name": "OpenStreetMap.CAT"
         }
     },
     "MapTilesAPI": {
@@ -720,8 +720,8 @@
             "url": "https://{s}.api.tomtom.com/map/1/tile/{variant}/{style}/{z}/{x}/{y}.{ext}?key={apikey}",
             "variant": "basic",
             "max_zoom": 22,
-            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2024 TomTom.</a> ",
-            "attribution": "(C) 1992 - 2024 TomTom.",
+            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2025 TomTom.</a> ",
+            "attribution": "(C) 1992 - 2025 TomTom.",
             "subdomains": "abcd",
             "style": "main",
             "ext": "png",
@@ -732,8 +732,8 @@
             "url": "https://{s}.api.tomtom.com/map/1/tile/{variant}/{style}/{z}/{x}/{y}.{ext}?key={apikey}",
             "variant": "hybrid",
             "max_zoom": 22,
-            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2024 TomTom.</a> ",
-            "attribution": "(C) 1992 - 2024 TomTom.",
+            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2025 TomTom.</a> ",
+            "attribution": "(C) 1992 - 2025 TomTom.",
             "subdomains": "abcd",
             "style": "main",
             "ext": "png",
@@ -744,8 +744,8 @@
             "url": "https://{s}.api.tomtom.com/map/1/tile/{variant}/{style}/{z}/{x}/{y}.{ext}?key={apikey}",
             "variant": "labels",
             "max_zoom": 22,
-            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2024 TomTom.</a> ",
-            "attribution": "(C) 1992 - 2024 TomTom.",
+            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2025 TomTom.</a> ",
+            "attribution": "(C) 1992 - 2025 TomTom.",
             "subdomains": "abcd",
             "style": "main",
             "ext": "png",
@@ -760,16 +760,6 @@
             "html_attribution": "Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012",
             "attribution": "Tiles (C) Esri -- Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012",
             "name": "Esri.WorldStreetMap"
-        },
-        "DeLorme": {
-            "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
-            "variant": "Specialty/DeLorme_World_Base_Map",
-            "html_attribution": "Tiles &copy; Esri &mdash; Copyright: &copy;2012 DeLorme",
-            "attribution": "Tiles (C) Esri -- Copyright: (C)2012 DeLorme",
-            "min_zoom": 1,
-            "max_zoom": 11,
-            "name": "Esri.DeLorme",
-            "status": "broken"
         },
         "WorldTopoMap": {
             "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
@@ -1044,8 +1034,8 @@
     "HERE": {
         "normalDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1061,8 +1051,8 @@
         },
         "normalDayCustom": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1078,8 +1068,8 @@
         },
         "normalDayGrey": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1095,8 +1085,8 @@
         },
         "normalDayMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1112,8 +1102,8 @@
         },
         "normalDayGreyMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1129,8 +1119,8 @@
         },
         "normalDayTransit": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1146,8 +1136,8 @@
         },
         "normalDayTransitMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1163,8 +1153,8 @@
         },
         "normalDayTraffic": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1180,8 +1170,8 @@
         },
         "normalNight": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1197,8 +1187,8 @@
         },
         "normalNightMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1214,8 +1204,8 @@
         },
         "normalNightGrey": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1231,8 +1221,8 @@
         },
         "normalNightGreyMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1248,8 +1238,8 @@
         },
         "normalNightTransit": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1265,8 +1255,8 @@
         },
         "normalNightTransitMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1282,8 +1272,8 @@
         },
         "reducedDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1299,8 +1289,8 @@
         },
         "reducedNight": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1316,8 +1306,8 @@
         },
         "basicMap": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1333,8 +1323,8 @@
         },
         "mapLabels": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1350,8 +1340,8 @@
         },
         "trafficFlow": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1367,8 +1357,8 @@
         },
         "carnavDayGrey": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1384,8 +1374,8 @@
         },
         "hybridDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1401,8 +1391,8 @@
         },
         "hybridDayMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1418,8 +1408,8 @@
         },
         "hybridDayTransit": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1435,8 +1425,8 @@
         },
         "hybridDayGrey": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1452,8 +1442,8 @@
         },
         "hybridDayTraffic": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1469,8 +1459,8 @@
         },
         "pedestrianDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1486,8 +1476,8 @@
         },
         "pedestrianNight": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1503,8 +1493,8 @@
         },
         "satelliteDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1520,8 +1510,8 @@
         },
         "terrainDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1537,8 +1527,8 @@
         },
         "terrainDayMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1556,8 +1546,8 @@
     "HEREv3": {
         "normalDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1572,8 +1562,8 @@
         },
         "normalDayCustom": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1588,8 +1578,8 @@
         },
         "normalDayGrey": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1604,8 +1594,8 @@
         },
         "normalDayMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1620,8 +1610,8 @@
         },
         "normalDayGreyMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1636,8 +1626,8 @@
         },
         "normalDayTransit": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1652,8 +1642,8 @@
         },
         "normalDayTransitMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1668,8 +1658,8 @@
         },
         "normalNight": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1684,8 +1674,8 @@
         },
         "normalNightMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1700,8 +1690,8 @@
         },
         "normalNightGrey": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1716,8 +1706,8 @@
         },
         "normalNightGreyMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1732,8 +1722,8 @@
         },
         "normalNightTransit": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1748,8 +1738,8 @@
         },
         "normalNightTransitMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1764,8 +1754,8 @@
         },
         "reducedDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1780,8 +1770,8 @@
         },
         "reducedNight": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1796,8 +1786,8 @@
         },
         "basicMap": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1812,8 +1802,8 @@
         },
         "mapLabels": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1828,8 +1818,8 @@
         },
         "trafficFlow": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1845,8 +1835,8 @@
         },
         "carnavDayGrey": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1861,8 +1851,8 @@
         },
         "hybridDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1877,8 +1867,8 @@
         },
         "hybridDayMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1893,8 +1883,8 @@
         },
         "hybridDayTransit": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1909,8 +1899,8 @@
         },
         "hybridDayGrey": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1925,8 +1915,8 @@
         },
         "pedestrianDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1941,8 +1931,8 @@
         },
         "pedestrianNight": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1957,8 +1947,8 @@
         },
         "satelliteDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1973,8 +1963,8 @@
         },
         "terrainDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1989,8 +1979,8 @@
         },
         "terrainDayMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -2569,6 +2559,14 @@
             "name": "NASAGIBS.ViirsTrueColorCR",
             "time": ""
         },
+        "BlueMarble": {
+            "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_NextGeneration/default/GoogleMapsCompatible_Level8/{z}/{y}/{x}.jpeg",
+            "max_zoom": 8,
+            "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (ESDIS) with funding provided by NASA/HQ.",
+            "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
+            "name": "NASAGIBS.BlueMarble",
+            "crs": "EPSG:3857"
+        },
         "BlueMarble3413": {
             "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3413/best/BlueMarble_NextGeneration/default/500m/{z}/{y}/{x}.jpeg",
             "max_zoom": 5,
@@ -2948,11 +2946,11 @@
             "bounds": [
                 [
                     -85.0,
-                    -175.0
+                    -179.9
                 ],
                 [
                     85.0,
-                    175.0
+                    179.9
                 ]
             ],
             "min_zoom": 0,
@@ -2993,11 +2991,11 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    -89.0,
+                    -80.0,
                     -180.0
                 ],
                 [
-                    89.0,
+                    80.0,
                     180.0
                 ]
             ],
@@ -3008,6 +3006,29 @@
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS",
             "name": "GeoportailFrance.orthos",
             "TileMatrixSet": "PM_0_21",
+            "apikey": "your_api_key_here"
+        },
+        "500k": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    40.38,
+                    -6.0
+                ],
+                [
+                    51.45,
+                    11.15
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 11,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "500k",
+            "name": "GeoportailFrance.500k",
+            "TileMatrixSet": "PM_0_11",
             "apikey": "your_api_key_here"
         },
         "Acces_Biomethane": {
@@ -3332,6 +3353,29 @@
             "TileMatrixSet": "PM_6_18",
             "apikey": "your_api_key_here"
         },
+        "Bnf_ignf_geographicalgridsystems_Cassini": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    40.9343,
+                    -6.39486
+                ],
+                [
+                    51.8839,
+                    9.96282
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 14,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "BNF-IGNF_GEOGRAPHICALGRIDSYSTEMS.CASSINI",
+            "name": "GeoportailFrance.Bnf_ignf_geographicalgridsystems_Cassini",
+            "TileMatrixSet": "PM_6_14",
+            "apikey": "your_api_key_here"
+        },
         "Buildings_Buildings": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -3424,6 +3468,30 @@
             "TileMatrixSet": "PM_0_20",
             "apikey": "your_api_key_here"
         },
+        "Cadastralparcels_Parcellaire_express_L93": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.1505
+                ],
+                [
+                    51.0991,
+                    9.5705
+                ]
+            ],
+            "min_zoom": 12,
+            "max_zoom": 20,
+            "format": "image/png",
+            "style": "PCI vecteur",
+            "variant": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS.L93",
+            "name": "GeoportailFrance.Cadastralparcels_Parcellaire_express_L93",
+            "TileMatrixSet": "2154_10cm_12_20",
+            "apikey": "your_api_key_here",
+            "status": "broken"
+        },
         "Cadastralparcels_Parcels": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -3508,12 +3576,12 @@
                 ]
             ],
             "min_zoom": 6,
-            "max_zoom": 18,
+            "max_zoom": 16,
             "format": "image/png",
             "style": "CAPACITE.ACCUEIL.ELECTRIQUE",
             "variant": "CAPACITE.ACCUEIL.ELECTRIQUE",
             "name": "GeoportailFrance.Capacite_Accueil_Electrique",
-            "TileMatrixSet": "PM_6_18",
+            "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
         "Cartes-14-18-edugeo_pyr-png_fxx_wm": {
@@ -3761,12 +3829,35 @@
                 ]
             ],
             "min_zoom": 6,
-            "max_zoom": 18,
+            "max_zoom": 16,
             "format": "image/png",
             "style": "DELAISSES.AUTOROUTIERS",
             "variant": "DELAISSES.AUTOROUTIERS",
             "name": "GeoportailFrance.Delaisses_Autoroutiers",
-            "TileMatrixSet": "PM_6_18",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Delmar_wmts": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    39.7726,
+                    -10.3575
+                ],
+                [
+                    51.6427,
+                    10.3808
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "DELMAR_WMTS",
+            "name": "GeoportailFrance.Delmar_wmts",
+            "TileMatrixSet": "PM_0_13",
             "apikey": "your_api_key_here"
         },
         "Dreal_Zonage_pinel": {
@@ -4411,6 +4502,52 @@
             "variant": "FORETS.PUBLIQUES",
             "name": "GeoportailFrance.Forets_Publiques",
             "TileMatrixSet": "PM_3_16",
+            "apikey": "your_api_key_here"
+        },
+        "Gaz_Corridor_Distribution": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.15047
+                ],
+                [
+                    51.0991,
+                    9.57054
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "GAZ.CORRIDOR.DISTRIBUTION",
+            "variant": "GAZ.CORRIDOR.DISTRIBUTION",
+            "name": "GeoportailFrance.Gaz_Corridor_Distribution",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Gaz_Corridor_Transport": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.15047
+                ],
+                [
+                    51.0991,
+                    9.57054
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "GAZ.CORRIDOR.TRANSPORT",
+            "variant": "GAZ.CORRIDOR.TRANSPORT",
+            "name": "GeoportailFrance.Gaz_Corridor_Transport",
+            "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
         "Gaz_Reseau_Distribution": {
@@ -5839,6 +5976,30 @@
             "TileMatrixSet": "PM_3_15",
             "apikey": "your_api_key_here"
         },
+        "Geographicalgridsystems_Planignv2_L93": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3274,
+                    -5.14151
+                ],
+                [
+                    51.0897,
+                    9.55802
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 19,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2.L93",
+            "name": "GeoportailFrance.Geographicalgridsystems_Planignv2_L93",
+            "TileMatrixSet": "2154_10cm_6_19",
+            "apikey": "your_api_key_here",
+            "status": "broken"
+        },
         "Geographicalgridsystems_Slopes_Mountain": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -6029,11 +6190,11 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    -90.0,
+                    -80.0,
                     -180.0
                 ],
                 [
-                    90.0,
+                    80.0,
                     180.0
                 ]
             ],
@@ -6045,6 +6206,30 @@
             "name": "GeoportailFrance.Hr_Orthoimagery_Orthophotos",
             "TileMatrixSet": "PM_6_19",
             "apikey": "your_api_key_here"
+        },
+        "Hr_Orthoimagery_Orthophotos_L93": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    40.0,
+                    -5.0
+                ],
+                [
+                    52.0,
+                    10.0
+                ]
+            ],
+            "min_zoom": 10,
+            "max_zoom": 20,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "HR.ORTHOIMAGERY.ORTHOPHOTOS.L93",
+            "name": "GeoportailFrance.Hr_Orthoimagery_Orthophotos_L93",
+            "TileMatrixSet": "2154_10cm_10_20",
+            "apikey": "your_api_key_here",
+            "status": "broken"
         },
         "Hydrography_Bcae_2020": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -6207,6 +6392,29 @@
             "TileMatrixSet": "PM_6_18",
             "apikey": "your_api_key_here"
         },
+        "Ignf_elevation_Elevationgridcoverage_Shadow": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.2735,
+                    -5.27131
+                ],
+                [
+                    51.1791,
+                    9.67502
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 17,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW",
+            "name": "GeoportailFrance.Ignf_elevation_Elevationgridcoverage_Shadow",
+            "TileMatrixSet": "PM_6_17",
+            "apikey": "your_api_key_here"
+        },
         "Inpe": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -6227,6 +6435,29 @@
             "style": "INPE",
             "variant": "INPE",
             "name": "GeoportailFrance.Inpe",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Inra_Carte_Sols": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "CARTE DES SOLS",
+            "variant": "INRA.CARTE.SOLS",
+            "name": "GeoportailFrance.Inra_Carte_Sols",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
@@ -6687,6 +6918,29 @@
             "style": "INSEE",
             "variant": "INSEE.FILOSOFI.POPULATION",
             "name": "GeoportailFrance.Insee_Filosofi_Population",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Installations_Pv_Sol": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.15047
+                ],
+                [
+                    51.0991,
+                    9.57054
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "INSTALLATIONS.PV.SOL",
+            "variant": "INSTALLATIONS.PV.SOL",
+            "name": "GeoportailFrance.Installations_Pv_Sol",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
@@ -8622,6 +8876,29 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
+        "Landuse_Agriculture2023": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "LANDUSE.AGRICULTURE2023",
+            "name": "GeoportailFrance.Landuse_Agriculture2023",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Lgv_edugeo_archeologie_pyr-png_fxx_wm_20170210": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -8737,6 +9014,52 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
+        "Litto3d_charente": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    45.9106,
+                    -1.70309
+                ],
+                [
+                    46.3359,
+                    -1.01731
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "LITTO3D_CHARENTE",
+            "name": "GeoportailFrance.Litto3d_charente",
+            "TileMatrixSet": "PM_0_16",
+            "apikey": "your_api_key_here"
+        },
+        "Localisation_Concessions_Hydro": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.15047
+                ],
+                [
+                    51.0991,
+                    9.57054
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "LOCALISATION.CONCESSIONS.HYDRO",
+            "variant": "LOCALISATION.CONCESSIONS.HYDRO",
+            "name": "GeoportailFrance.Localisation_Concessions_Hydro",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Localisation_Mats_Eolien": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -8757,29 +9080,6 @@
             "style": "LOCALISATION.MATS.EOLIEN",
             "variant": "LOCALISATION.MATS.EOLIEN",
             "name": "GeoportailFrance.Localisation_Mats_Eolien",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Lot_Chasse": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -21.4756,
-                    -63.3725
-                ],
-                [
-                    51.3121,
-                    55.9259
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "LOT.CHASSE",
-            "name": "GeoportailFrance.Lot_Chasse",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
@@ -8826,6 +9126,98 @@
             "style": "normal",
             "variant": "NATURALRISKZONES.1910FLOODEDWATERSHEDS",
             "name": "GeoportailFrance.Naturalriskzones_1910floodedwatersheds",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ocsge_Construction_2010": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.15047
+                ],
+                [
+                    51.0991,
+                    9.57054
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "OCSGE.CONSTRUCTION.2010",
+            "name": "GeoportailFrance.Ocsge_Construction_2010",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ocsge_Construction_2016_2017": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.1505
+                ],
+                [
+                    51.0991,
+                    9.5705
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "OCSGE.CONSTRUCTION.2016-2017",
+            "name": "GeoportailFrance.Ocsge_Construction_2016_2017",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ocsge_Construction_2017_2020": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "OCSGE.CONSTRUCTION.2017-2020",
+            "name": "GeoportailFrance.Ocsge_Construction_2017_2020",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ocsge_Construction_2021_2023": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "OCSGE.CONSTRUCTION.2021-2023",
+            "name": "GeoportailFrance.Ocsge_Construction_2021_2023",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
@@ -9039,6 +9431,29 @@
             "apikey": "your_api_key_here",
             "status": "broken"
         },
+        "Ocsge_Couverture_2010": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.15047
+                ],
+                [
+                    51.0991,
+                    9.57054
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "OCSGE.COUVERTURE.2010",
+            "name": "GeoportailFrance.Ocsge_Couverture_2010",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Ocsge_Couverture_2011": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -9109,6 +9524,29 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
+        "Ocsge_Couverture_2016_2017": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.1505
+                ],
+                [
+                    51.0991,
+                    9.5705
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "OCSGE.COUVERTURE.2016-2017",
+            "name": "GeoportailFrance.Ocsge_Couverture_2016_2017",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Ocsge_Couverture_2017": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -9132,6 +9570,29 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
+        "Ocsge_Couverture_2017_2020": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "OCSGE.COUVERTURE.2017-2020",
+            "name": "GeoportailFrance.Ocsge_Couverture_2017_2020",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Ocsge_Couverture_2019": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -9152,6 +9613,29 @@
             "style": "nolegend",
             "variant": "OCSGE.COUVERTURE.2019",
             "name": "GeoportailFrance.Ocsge_Couverture_2019",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ocsge_Couverture_2021_2023": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "OCSGE.COUVERTURE.2021-2023",
+            "name": "GeoportailFrance.Ocsge_Couverture_2021_2023",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
@@ -9201,6 +9685,29 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here",
             "status": "broken"
+        },
+        "Ocsge_Usage_2010": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.15047
+                ],
+                [
+                    51.0991,
+                    9.57054
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "OCSGE.USAGE.2010",
+            "name": "GeoportailFrance.Ocsge_Usage_2010",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
         },
         "Ocsge_Usage_2011": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -9272,6 +9779,29 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
+        "Ocsge_Usage_2016_2017": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.1505
+                ],
+                [
+                    51.0991,
+                    9.5705
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "OCSGE.USAGE.2016-2017",
+            "name": "GeoportailFrance.Ocsge_Usage_2016_2017",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Ocsge_Usage_2017": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -9295,6 +9825,29 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
+        "Ocsge_Usage_2017_2020": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "OCSGE.USAGE.2017-2020",
+            "name": "GeoportailFrance.Ocsge_Usage_2017_2020",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Ocsge_Usage_2019": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -9315,6 +9868,29 @@
             "style": "nolegend",
             "variant": "OCSGE.USAGE.2019",
             "name": "GeoportailFrance.Ocsge_Usage_2019",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ocsge_Usage_2021_2023": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "OCSGE.USAGE.2021-2023",
+            "name": "GeoportailFrance.Ocsge_Usage_2021_2023",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
@@ -9431,6 +10007,29 @@
             "variant": "OFB.ZONES.NECESSITANT.AVIS.GESTIONNAIRE",
             "name": "GeoportailFrance.Ofb_Zones_Necessitant_Avis_Gestionnaire",
             "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Optimized-planignv2": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -85.0,
+                    -179.9
+                ],
+                [
+                    85.0,
+                    179.9
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 19,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "OPTIMIZED-PLANIGNV2",
+            "name": "GeoportailFrance.Optimized-planignv2",
+            "TileMatrixSet": "PM_0_19",
             "apikey": "your_api_key_here"
         },
         "Ortho-edugeo_pyr-png_wld_wm": {
@@ -11296,6 +11895,29 @@
             "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
+        "Orthoimagery_Ortho_sat_Pleiades_Mayotte_2024_06": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -13.091,
+                    44.9299
+                ],
+                [
+                    -12.5665,
+                    45.317
+                ]
+            ],
+            "min_zoom": 4,
+            "max_zoom": 18,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.MAYOTTE.2024-06",
+            "name": "GeoportailFrance.Orthoimagery_Ortho_sat_Pleiades_Mayotte_2024_06",
+            "TileMatrixSet": "PM_4_18",
+            "apikey": "your_api_key_here"
+        },
         "Orthoimagery_Ortho_sat_Rapideye_2010": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -11647,12 +12269,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    47.0831,
-                    -2.27523
+                    40.0,
+                    -6.0
                 ],
                 [
-                    49.0193,
-                    2.61963
+                    52.0,
+                    10.0
                 ]
             ],
             "min_zoom": 3,
@@ -11670,12 +12292,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    41.3125,
-                    -2.37153
+                    40.0,
+                    -5.0
                 ],
                 [
-                    49.7785,
-                    9.67536
+                    52.0,
+                    10.0
                 ]
             ],
             "min_zoom": 3,
@@ -11693,11 +12315,11 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    -89.0,
+                    -80.0,
                     -180.0
                 ],
                 [
-                    89.0,
+                    80.0,
                     180.0
                 ]
             ],
@@ -11786,21 +12408,21 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    -21.4013,
-                    -62.9717
+                    -80.0,
+                    -180.0
                 ],
                 [
-                    51.1124,
-                    55.8464
+                    80.0,
+                    180.0
                 ]
             ],
-            "min_zoom": 0,
+            "min_zoom": 6,
             "max_zoom": 19,
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc",
-            "TileMatrixSet": "PM_0_19",
+            "TileMatrixSet": "PM_6_19",
             "apikey": "your_api_key_here"
         },
         "Orthoimagery_Orthophotos_Irc_express_2018": {
@@ -11915,6 +12537,29 @@
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2023",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_express_2023",
+            "TileMatrixSet": "PM_0_19",
+            "apikey": "your_api_key_here"
+        },
+        "Orthoimagery_Orthophotos_Irc_express_2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -75.0,
+                    -179.5
+                ],
+                [
+                    75.0,
+                    179.5
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 19,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2024",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_express_2024",
             "TileMatrixSet": "PM_0_19",
             "apikey": "your_api_key_here"
         },
@@ -12398,6 +13043,29 @@
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2023",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_express_2023",
+            "TileMatrixSet": "PM_0_19",
+            "apikey": "your_api_key_here"
+        },
+        "Orthoimagery_Orthophotos_Ortho_express_2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -75.0,
+                    -179.5
+                ],
+                [
+                    75.0,
+                    179.5
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 19,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2024",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_express_2024",
             "TileMatrixSet": "PM_0_19",
             "apikey": "your_api_key_here"
         },
@@ -13134,9 +13802,55 @@
             "style": "normal",
             "variant": "PCRS.LAMB93",
             "name": "GeoportailFrance.Pcrs_Lamb93",
-            "TileMatrixSet": "LAMB93_5cm_6_22",
+            "TileMatrixSet": "2154_5cm_6_22",
             "apikey": "your_api_key_here",
             "status": "broken"
+        },
+        "Plan_ign_074_gris_n15": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    45.4544,
+                    5.47119
+                ],
+                [
+                    46.5192,
+                    7.56134
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 15,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "PLAN_IGN_074_GRIS_N15",
+            "name": "GeoportailFrance.Plan_ign_074_gris_n15",
+            "TileMatrixSet": "PM_0_15",
+            "apikey": "your_api_key_here"
+        },
+        "Plan_ign_074_n10_gris": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    45.4544,
+                    5.47119
+                ],
+                [
+                    46.5192,
+                    7.56134
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 10,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "PLAN_IGN_074_N10_GRIS",
+            "name": "GeoportailFrance.Plan_ign_074_n10_gris",
+            "TileMatrixSet": "PM_0_10",
+            "apikey": "your_api_key_here"
         },
         "Points_Injection_Biomethane": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -13788,12 +14502,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    -21.4756,
-                    -63.3725
+                    -21.3955,
+                    -63.1538
                 ],
                 [
-                    51.3121,
-                    55.9259
+                    51.097,
+                    55.8522
                 ]
             ],
             "min_zoom": 6,
@@ -14426,6 +15140,144 @@
             "TileMatrixSet": "PM_0_17",
             "apikey": "your_api_key_here"
         },
+        "Patinat_apb": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3781,
+                    -109.438
+                ],
+                [
+                    50.9841,
+                    55.6872
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patinat_APB",
+            "name": "GeoportailFrance.Patinat_apb",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patinat_apg": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    43.918,
+                    -2.56167
+                ],
+                [
+                    49.958,
+                    4.61007
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patinat_APG",
+            "name": "GeoportailFrance.Patinat_apg",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patinat_pn": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3863,
+                    -62.018
+                ],
+                [
+                    48.1066,
+                    55.8367
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patinat_PN",
+            "name": "GeoportailFrance.Patinat_pn",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patinat_pnr": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    3.9057,
+                    -61.229
+                ],
+                [
+                    50.9625,
+                    9.48876
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patinat_PNR",
+            "name": "GeoportailFrance.Patinat_pnr",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patinat_rb": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3768,
+                    -61.5181
+                ],
+                [
+                    50.7622,
+                    55.8053
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patinat_RB",
+            "name": "GeoportailFrance.Patinat_rb",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patinat_rnn": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -53.2258,
+                    -63.0583
+                ],
+                [
+                    51.0775,
+                    81.811
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patinat_RNN",
+            "name": "GeoportailFrance.Patinat_rnn",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Rapideye_pyr-jpeg_wld_wm_2010": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -14517,6 +15369,102 @@
             "name": "GeoportailFrance.Rpg2012_pyr-png_wld_edugeo_20170126",
             "TileMatrixSet": "PM_0_16",
             "apikey": "your_api_key_here"
+        },
+        "Raster_zh_centrevdl": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    46.321,
+                    0.0993186
+                ],
+                [
+                    48.9503,
+                    3.13104
+                ]
+            ],
+            "min_zoom": 7,
+            "max_zoom": 14,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Raster_ZH_centreVDL",
+            "name": "GeoportailFrance.Raster_zh_centrevdl",
+            "TileMatrixSet": "LAMB93_50cm_7_14",
+            "apikey": "your_api_key_here",
+            "status": "broken"
+        },
+        "Raster_zh_centrevdl_et_auvergnera": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    44.14,
+                    0.0993186
+                ],
+                [
+                    48.9503,
+                    7.28751
+                ]
+            ],
+            "min_zoom": 7,
+            "max_zoom": 14,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Raster_ZH_centreVDL_et_auvergneRA",
+            "name": "GeoportailFrance.Raster_zh_centrevdl_et_auvergnera",
+            "TileMatrixSet": "LAMB93_50cm_7_14",
+            "apikey": "your_api_key_here",
+            "status": "broken"
+        },
+        "Raster_zone_humide_ara_cvdl": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    44.14,
+                    0.0993186
+                ],
+                [
+                    48.9503,
+                    7.28751
+                ]
+            ],
+            "min_zoom": 7,
+            "max_zoom": 14,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Raster_zone_humide_ARA_CVDL",
+            "name": "GeoportailFrance.Raster_zone_humide_ara_cvdl",
+            "TileMatrixSet": "LAMB93_50cm_7_14",
+            "apikey": "your_api_key_here",
+            "status": "broken"
+        },
+        "Raster_zone_humide_auvergnera": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    44.14,
+                    2.07665
+                ],
+                [
+                    46.7243,
+                    7.28751
+                ]
+            ],
+            "min_zoom": 7,
+            "max_zoom": 14,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Raster_zone_humide_auvergneRA",
+            "name": "GeoportailFrance.Raster_zone_humide_auvergnera",
+            "TileMatrixSet": "LAMB93_50cm_7_14",
+            "apikey": "your_api_key_here",
+            "status": "broken"
         },
         "Scan-edugeo_pyr-png_fxx_wm": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -15277,6 +16225,29 @@
             "TileMatrixSet": "PM_6_18",
             "apikey": "your_api_key_here"
         },
+        "Wmts_beziers-colombiers_2022110638503087": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    43.2771,
+                    3.08618
+                ],
+                [
+                    43.3849,
+                    3.23436
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "WMTS_BEZIERS-COLOMBIERS_2022110638503087",
+            "name": "GeoportailFrance.Wmts_beziers-colombiers_2022110638503087",
+            "TileMatrixSet": "PM_0_18",
+            "apikey": "your_api_key_here"
+        },
         "Hedge_Hedge": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -15298,6 +16269,29 @@
             "variant": "hedge.hedge",
             "name": "GeoportailFrance.Hedge_Hedge",
             "TileMatrixSet": "PM_7_18",
+            "apikey": "your_api_key_here"
+        },
+        "Hydro_ardennes_pyramide_raster_wmts": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    47.9409,
+                    1.99937
+                ],
+                [
+                    50.2587,
+                    5.87344
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 16,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "hydro_ardennes_pyramide_raster_wmts",
+            "name": "GeoportailFrance.Hydro_ardennes_pyramide_raster_wmts",
+            "TileMatrixSet": "PM_0_16",
             "apikey": "your_api_key_here"
         },
         "Testsrd-pcrs86-poitiers": {
@@ -15344,6 +16338,52 @@
             "variant": "tuto_scan1000_SRD",
             "name": "GeoportailFrance.Tuto_scan1000_srd",
             "TileMatrixSet": "PM_0_10",
+            "apikey": "your_api_key_here"
+        },
+        "Zzz_nl_test_prevair_o3_chi_an_euro_dave_20241201_d_1": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    29.9888,
+                    -25.0
+                ],
+                [
+                    70.0,
+                    44.9977
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 6,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "zzz_nl_test_prevair_O3_CHI_AN_EURO_DAVE_20241201_D_1",
+            "name": "GeoportailFrance.Zzz_nl_test_prevair_o3_chi_an_euro_dave_20241201_d_1",
+            "TileMatrixSet": "PM_0_6",
+            "apikey": "your_api_key_here"
+        },
+        "Zzz_nl_test_reserve_biosphere": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3768,
+                    -61.5181
+                ],
+                [
+                    50.7622,
+                    55.8053
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "zzz_nl_test_reserve_biosphere",
+            "name": "GeoportailFrance.Zzz_nl_test_reserve_biosphere",
+            "TileMatrixSet": "PM_0_16",
             "apikey": "your_api_key_here"
         }
     },
@@ -15763,8 +16803,8 @@
     "OrdnanceSurvey": {
         "Road": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Road_3857/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2024",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2024",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "min_zoom": 7,
             "max_zoom": 16,
@@ -15783,8 +16823,8 @@
         },
         "Road_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Road_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2024",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2024",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,
@@ -15804,8 +16844,8 @@
         },
         "Outdoor": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Outdoor_3857/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2024",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2024",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "min_zoom": 7,
             "max_zoom": 16,
@@ -15824,8 +16864,8 @@
         },
         "Outdoor_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Outdoor_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2024",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2024",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,
@@ -15845,8 +16885,8 @@
         },
         "Light": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Light_3857/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2024",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2024",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "min_zoom": 7,
             "max_zoom": 16,
@@ -15865,8 +16905,8 @@
         },
         "Light_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Light_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2024",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2024",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,
@@ -15886,8 +16926,8 @@
         },
         "Leisure_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Leisure_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2024",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2024",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,

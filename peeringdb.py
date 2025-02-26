@@ -137,7 +137,6 @@ def display_peeringdb_links(asn):
     asn_num = asn.replace("AS", "").strip()
     
     links = [
-        ["PeeringDB Network Page", f"https://www.peeringdb.com/net/{asn_num}"],
         ["PeeringDB ASN Search", f"https://www.peeringdb.com/asn/{asn_num}"],
         ["BGP.tools", f"https://bgp.tools/as/{asn_num}"],
         ["Hurricane Electric BGP Toolkit", f"https://bgp.he.net/AS{asn_num}"]

@@ -15,12 +15,12 @@
       "description": "Lookup MAC address vendor and format conversion"
     },
     {
-      "name": "IP Visualization (NO VPN)",
+      "name": "MTR IP Map Visualization",
       "script": "ipinfo.py",
-      "description": "Visualize IP route paths from MTR"
+      "description": "Visualize IP route paths from MTR on an html map"
     },
     {
-      "name": "IP Info (RIPE, etc.)",
+      "name": "IP Info whois",
       "script": "ip_ripe.py",
       "description": "Query IP information from RIPE and other RIRs"
     },
@@ -28,5 +28,10 @@
       "name": "AS PeeringDB Data",
       "script": "peeringdb.py",
       "description": "Fetch AS information from PeeringDB"
+    },
+    {
+        "name": "Prefix Health checker",
+        "script": "prefixhealth.py",
+        "description": "BROKEN: Fetch prefix health data like RPKI and ROA"
     }
   ]
