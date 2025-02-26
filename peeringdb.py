@@ -70,6 +70,19 @@ def fetch_data(endpoint, params=None, retries=2):
     
     return None
 
+def search_networks_by_name(name_fragment):
+    """Search for networks by name fragment."""
+    print(colored(f"Searching for networks with name containing '{name_fragment}'...", 'green'))
+    
+    # Use the search endpoint with the name parameter
+    params = {"name__contains": name_fragment}
+    data = fetch_data("net", params=params)
+    
+    if not data or not data.get('data'):
+        return []
+    
+    return data['data']
+
 def fetch_asn_details(asn):
     """Fetch basic details about an ASN from PeeringDB."""
     # Validate ASN input
@@ -137,6 +150,7 @@ def display_peeringdb_links(asn):
     asn_num = asn.replace("AS", "").strip()
     
     links = [
+        ["PeeringDB Network Page", f"https://www.peeringdb.com/net/{asn_num}"],
         ["PeeringDB ASN Search", f"https://www.peeringdb.com/asn/{asn_num}"],
         ["BGP.tools", f"https://bgp.tools/as/{asn_num}"],
         ["Hurricane Electric BGP Toolkit", f"https://bgp.he.net/AS{asn_num}"]
@@ -145,31 +159,93 @@ def display_peeringdb_links(asn):
     for link in links:
         print(f"{link[0].ljust(30)}: {colored(link[1], 'cyan')}")
 
+def display_search_results(results):
+    """Display search results in a numbered list."""
+    print_section_header(f"SEARCH RESULTS ({len(results)} networks found)")
+    
+    for i, network in enumerate(results, 1):
+        asn = network.get('asn', 'Unknown')
+        name = network.get('name', 'Unknown')
+        info_type = network.get('info_type', '')
+        info_scope = network.get('info_scope', '')
+        info_traffic = network.get('info_traffic', '')
+        
+        # Format the additional info
+        additional_info = []
+        if info_type:
+            additional_info.append(info_type)
+        if info_scope:
+            additional_info.append(info_scope)
+        if info_traffic:
+            additional_info.append(info_traffic)
+        
+        additional_info_str = " | ".join(additional_info)
+        if additional_info_str:
+            additional_info_str = f" ({additional_info_str})"
+        
+        print(colored(f"{i}. ", 'cyan') + 
+              colored(f"AS{asn}", 'yellow') + 
+              f" - {name}" + 
+              colored(additional_info_str, 'green'))
+
 def main():
     try:
         print(colored("\n=== PeeringDB Information Tool ===", 'cyan', attrs=['bold']))
+        print(colored("You can search by ASN or by company name", 'white'))
         
-        # Get ASN input
-        asn_input = input(colored("Enter the ASN (with or without 'AS' prefix): ", 'yellow'))
+        # Get input
+        search_input = input(colored("Enter ASN, company name, or name fragment: ", 'yellow'))
         
-        if not asn_input.strip():
-            print(colored("No ASN provided. Exiting.", 'red'))
-        else:
+        if not search_input.strip():
+            print(colored("No input provided. Exiting.", 'red'))
+            return
+        
+        # Check if input is an ASN (starts with AS or is numeric)
+        if search_input.upper().startswith('AS') or search_input.strip().isdigit():
             # Normalize input by removing 'AS' prefix if present
-            asn = asn_input.upper().replace("AS", "").strip()
+            asn = search_input.upper().replace("AS", "").strip()
             
-            print(colored(f"\nFetching basic data for AS{asn}...", 'green'))
+            print(colored(f"\nFetching data for AS{asn}...", 'green'))
             network = fetch_asn_details(asn)
             
             if network:
-                # Display basic network information and peering policy
+                # Display network information
                 display_network_info(network)
-                
-                # Display links to additional resources
                 display_peeringdb_links(asn)
             else:
                 print(colored(f"No data found for AS{asn} in PeeringDB.", 'red'))
                 print(colored("This AS may not be registered in PeeringDB or might not exist.", 'yellow'))
+        else:
+            # Search by name
+            networks = search_networks_by_name(search_input)
+            
+            if not networks:
+                print(colored(f"No networks found matching '{search_input}'.", 'red'))
+                return
+            
+            # Display search results
+            display_search_results(networks)
+            
+            # Prompt user to select a network
+            while True:
+                try:
+                    selection = input(colored("\nSelect a network by number (or 'q' to quit): ", 'yellow'))
+                    
+                    if selection.lower() == 'q':
+                        print(colored("Exiting search.", 'yellow'))
+                        return
+                    
+                    idx = int(selection) - 1
+                    if 0 <= idx < len(networks):
+                        selected_network = networks[idx]
+                        # Display detailed information for the selected network
+                        display_network_info(selected_network)
+                        display_peeringdb_links(str(selected_network.get('asn', '')))
+                        break
+                    else:
+                        print(colored("Invalid selection. Please try again.", 'red'))
+                except ValueError:
+                    print(colored("Please enter a valid number or 'q' to quit.", 'red'))
     
     except KeyboardInterrupt:
         print(colored("\nOperation cancelled by user.", 'yellow'))
