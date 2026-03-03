@@ -5,4 +5,3 @@ __pycache__/
 *.yml
 Dockerfile
 Dockerfile.save
-requirements.txt

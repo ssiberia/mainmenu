@@ -1,0 +1,7 @@
+termcolor
+requests
+terminaltables
+ipaddress
+manuf
+ipwhois
+folium
